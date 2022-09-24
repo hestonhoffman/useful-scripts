@@ -7,15 +7,14 @@ if [[ $# -eq 0 ]] ; then
     echo 'ERROR: No arguments given.'
     echo 'Pass the name of the repo you want to create into the script'
     exit 0
-fi
-
-case "$1" in
+else
     touch README.md
     git init
     git add README.md
-    gh repo create hestonhoffman/$1 --public --source=. --remote=upstream
-    git remote add origin git@github:hestonhoffman/$1
+    gh repo create hestonhoffman/$1 --public --source=. --remote=origin
     git branch -m main
     git commit -m "Initial commit"
-    git push origin -u main
-esac
+    git push origin -u main 
+    URL="https://github.com/hestonhoffman/$1"
+    open $URL || xdg-open $URL || sensible-browser $URL || x-www-browser $URL || gnome-open $URL
+fi
