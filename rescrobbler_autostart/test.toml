@@ -1,0 +1,4 @@
+
+lastfm-key = "12345"
+lastfm-secret = "abcd"
+player-whitelist = ["chromium.instance52280"]
