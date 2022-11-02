@@ -5,5 +5,9 @@
 year=`date +'%Y'`
 username='mthrl'
 URL="https://www.last.fm/user/$username/library/tracks?from=$year-01-01&rangetype=year"
+ostype=`echo $OSTYPE`
 
-open $URL || xdg-open $URL || sensible-browser $URL || x-www-browser $URL || gnome-open $URL
+case $ostype in
+*"linux"*) xdg-open $URL;;
+*"darwin"*) open $URL;;
+esac
