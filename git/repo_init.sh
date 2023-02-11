@@ -1,6 +1,6 @@
 #! bin/bash
 
-# 1. Make sure you're authed: `gh auth login`
+# 1. Make sure you're authed: `ssh -T github.com` and then `gh auth login` if it fails.
 # 2. Remember to pass the name of the repo in as an argument.
 
 if [[ $# -eq 0 ]] ; then
