@@ -5,8 +5,8 @@ import pathlib
 import json
 
 # Discover's delay can be a bit annoying, so I store the result
-# in a file and read from it. I update the file with discover if the 
-# IP address fails 
+# in a file and read from it. I update the file with discover if the
+# IP address fails
 script_location = pathlib.Path(__file__).parent.resolve()
 
 def write_leglight_to_file():
@@ -24,7 +24,7 @@ def read_from_file():
 def get_light(vars):
     return leglight.LegLight(vars['address'], vars['port'])
 
-try: 
+try:
     file_light_vars = read_from_file()
     file_light = get_light(file_light_vars)
 except:
