@@ -1,3 +1,4 @@
 .DS_Store
 .env
 light.json
+deletion_log.log
