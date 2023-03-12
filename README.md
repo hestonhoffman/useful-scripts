@@ -10,3 +10,4 @@ A collection of random scripts
 - [Elgato keylight](elgato/kl.py): Turns an Elgato key light on and off
 - [Rescrobbler autostart](rescrobbler_autostart/rescrobbler.py): Autorun for Rescrobbler
 - [Discord install script](discord_install/install_discord.sh): Download/install script for Linux Arch
+- [Wordle guess checker](wordle/wordle.py): Checks a Wordle guess against previous answers to check if it's been used before
