@@ -33,9 +33,9 @@ if __name__ == "__main__":
     wordle_answers = get_wordle_answers()
 
     if args.answer.lower() in wordle_answers:
-        print('That word has been used before.')
+        print('\x1b[31mThat word has been used before.\x1b[0m')
     else:
-        print('That word has never been used before.')
+        print('\x1b[32mThat word has never been used before.\x1b[0m')
 
 
 
