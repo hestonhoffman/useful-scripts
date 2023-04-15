@@ -2,3 +2,5 @@
 .env
 light.json
 deletion_log.log
+venv
+admin/
