@@ -11,3 +11,4 @@ A collection of random scripts
 - [Rescrobbler autostart](rescrobbler_autostart/rescrobbler.py): Autorun for Rescrobbler
 - [Discord install script](discord_install/install_discord.sh): Download/install script for Linux Arch
 - [Wordle guess checker](wordle/wordle.py): Checks a Wordle guess against previous answers to check if it's been used before
+- [Spotify2Tidal](spotty2tidal/spotty2tidal.py): Takes a Spotify URL and returns a Tidal URL
